@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ServiceStartDateCheck</name>
+  <uuid>ef763a06-ea46-4334-af77-e7f93884d521</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+  the DOJ of Pensioner  is before 3/31/2004
+then
+  set decision to "Verified" ;
+else
+    set decision to "Not Verified" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

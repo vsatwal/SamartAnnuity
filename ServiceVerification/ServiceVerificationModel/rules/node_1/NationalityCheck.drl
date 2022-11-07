@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>NationalityCheck</name>
+  <uuid>6e0e6765-d822-4067-b1d7-025cbc9a88b8</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the nationality of Pensioner is "Indian" or the nationality of Pensioner is "IN"
+then
+    set decision to "Verified";
+
+else set decision to "Not Verified";]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
