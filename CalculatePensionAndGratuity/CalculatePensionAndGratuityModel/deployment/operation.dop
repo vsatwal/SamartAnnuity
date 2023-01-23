@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="CalculatePensionAndGratuityModel">
+  <name>CalculatePensionAndGratuityModel</name>
+  <uuid>836c3bd5-d2f1-4667-9fd6-7a1a53735a13</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#eeeb491f-5267-4f65-9bbf-e61d7be11f2e"/>
+  <targetRuleProject href="../../CalculatePensionAndGratuityModel#eb98d06f-5dd7-49b3-9975-0d7705f50aa8"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["CalculatePensionAndGratuityModel"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>PensionerServiceVerification</name>
+  <uuid>04aa94f5-962d-49b4-bec0-c5fcf525d4ba</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	PensionerNationalityCheck is "Verified"
+	and PensionerServiceRemark is "Verified"
+	and PensionerServiceDOJCheck is "Verified"
+then
+	set decision to "Verified" ;
+else
+	set decision to "Not Verified" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

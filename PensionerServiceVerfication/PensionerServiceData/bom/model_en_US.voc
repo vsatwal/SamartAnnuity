@@ -1,0 +1,23 @@
+
+# cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData#concept.label = PensionerDetails
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.DOB#phrase.action = set the DOB of {this} to {DOB}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.DOB#phrase.navigation = {DOB} of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.DOJ#phrase.action = set the DOJ of {this} to {DOJ}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.DOJ#phrase.navigation = {DOJ} of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.DOR#phrase.action = set the DOR of {this} to {DOR}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.DOR#phrase.navigation = {DOR} of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.PensionerServiceData(ilog.rules.brl.SimpleDate,ilog.rules.brl.SimpleDate,ilog.rules.brl.SimpleDate,java.lang.String,java.lang.Long,java.util.List,java.lang.String)#phrase.navigation = a new {PensionerDetails} where {0, DOB} {1, DOJ} {2, DOR} {3, nationality} {4, serviceDuration} {5, service_Record} {6, service_Verification}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.addTo_service_Records(java.lang.String)#phrase.action = add {0} to the service_Records of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.clear_service_Records()#phrase.action = clear the service_Records of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.nationality#phrase.action = set the nationality of {this} to {nationality}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.nationality#phrase.navigation = {nationality} of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.removeFrom_service_Records(java.lang.String)#phrase.action = remove {0} from the service_Records of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.serviceDuration#phrase.action = set the serviceDuration of {this} to {serviceDuration}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.serviceDuration#phrase.addition_setter = add {serviceDuration} to the serviceDuration of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.serviceDuration#phrase.navigation = {serviceDuration} of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.serviceDuration#phrase.subtraction_setter = subtract {serviceDuration} from the serviceDuration of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.service_Records#phrase.action = set the service_Records of {this} to {service_Record}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.service_Records#phrase.navigation = {service_Record} of {this}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.service_Verification#phrase.action = set the service_Verification of {this} to {service_Verification}
+cp4admin.pensionersserviceverification.pensionerserviceverfication.pensionerservicedata.PensionerServiceData.service_Verification#phrase.navigation = {service_Verification} of {this}

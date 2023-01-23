@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+  <name>decisionModel</name>
+  <uuid>eeeb491f-5267-4f65-9bbf-e61d7be11f2e</uuid>
+  <locale>en_US</locale>
+  <definition>
+        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="ServiceDuration">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="ServiceDuration"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="ServiceDuration" typeRef="java.lang.Long"/>
+    </inputData>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="ServiceDuration"/>
+                <input bomType="java.lang.Double" collection="false" name="LastSalary"/>
+                <input bomType="java.lang.Double" collection="false" name="AvgSalary"/>
+                <output bomType="cp4admin.pensionersserviceverification.calculatepensionandgratuity.pensiondata.PensionData" collection="false" name="Decision"/>
+                <rule defaultRule="false" href="node_1/CalculatePension.drl" kind="BusinessRule" name="CalculatePension"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="cp4admin.pensionersserviceverification.calculatepensionandgratuity.pensiondata.PensionData"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="LastSalary">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="LastSalary"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="LastSalary" typeRef="java.lang.Double"/>
+    </inputData>
+    <inputData id="node_3" name="AvgSalary">
+        <description>Average salary of pensioner's last year in service</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="AvgSalary"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="AvgSalary" typeRef="java.lang.Double"/>
+    </inputData>
+</definitions>
+    </definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
